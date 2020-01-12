@@ -1,38 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-    <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    </head>
- 
-    <body>
-        <style>
-            label {
-                margin-left: 50px;
-            }
-            input{
-                width: 600px;
-                height: 50px;
-                margin-top: 300px; 
-                margin-left: 50px;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    ​
+</head>
 
-            #button{
-                width: 400px;
-            }
+<body>
+    <style>
+        body {
+            background: grey;
+        }
 
-        </style>
-        <div class="container">
-            <form action="/action_page.php">
-                <!-- <label>Country:</label> -->
-                <input id="country" type="text" name="country" placeholder="Country">
-                <input id="button" type="submit" value="Submit">
-              </form>
+        label {
+            margin-left: 50px;
+        }
+
+        input {
+            width: 350px;
+            height: 50px;
+        }
+
+        #country {
+            width: 350px;
+            height: 80px;
+            align-self: center;
+        }
+
+        #button {
+            width: 200px;
+            height: 60px;
+            background-color: rgb(2, 16, 20);
+            color: white;
+            font-weight: bold;
+            font-size: 50 px;
+            align-self: right;
+            right: 30px;
+            border-radius: 25px;
+            border: rgb(2, 16, 20) solid;
+
+        }
+
+        .container {
+            display: block;
+            background: #254653;
+            border-radius: 5%;
+            width: 500px;
+            height: 300px;
+            left: 33vw;
+            top: 30vh;
+            position: absolute;
+            text-align: center;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        .background {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .background-img {
+
+            width: 100%;
+            height: 100%;
+        }
+
+        h2 {
+            align-self: left;
+            padding: 5%;
+            color: white;
+        }
+
+        .textfield {
+            align-self: center;
+        }
+
+        ​
+    </style>
+    <div class="background">
+        <img class="background-img" src="mountainhome.jpg" mode="aspectFill">
+    </div>
+    <div class="container">
+        <div class="title">
+            <h2> Mountain </h2>
         </div>
-                    
-                    
-    </body>
+        <div>
+            <form action="index.html" class="input">
+                <!-- <label>Country:</label> -->
+                <div class="textfield">
+                    <input id="country" type="text" name="country" placeholder="Country">
+                </div>
+                <div class="submit-button">
+                    <a href="index.html"><input id="button" type="submit" value="Submit"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
 </html>
