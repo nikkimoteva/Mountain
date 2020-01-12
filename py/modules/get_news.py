@@ -10,3 +10,9 @@ class NewsClient:
             query, category, country)
         for headline in top_headlines["articles"]:
             yield headline
+
+    def yield_articles(self, query, language):
+        articles = self.newsapi.get_everything(
+            query, language, sort_by="relevancy", page_size=100)
+        for article in articles["articles"]:
+            yield article
