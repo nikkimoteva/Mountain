@@ -1,5 +1,7 @@
 const countryInputForm = document.getElementById("countrySelect");
 
+const normalize = (val, max, min) => { return (val - min) / (max - min); }
+
 function updateMap(e) {
   console.log(e);
 
