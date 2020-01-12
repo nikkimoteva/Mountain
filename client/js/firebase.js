@@ -20,15 +20,19 @@ function getSentiments(country) {
     return summaryRef.get()
         .then(function (doc) {
             if (doc.exists) {
-                console.log("Document data:", doc.data().sentiments);
+                // console.log("Document data:", doc.data().sentiments);
                 return doc.data().sentiments
             } else {
                 // doc.data() will be undefined in this case
-                console.log("No such document!");
+                // console.log("No document");
+                return {}
             }
         }).catch(function (error) {
             console.log("Error getting document:", error);
         });
 }
 
+
+
 // window.onload(()getSentiments("CAN"));
+
