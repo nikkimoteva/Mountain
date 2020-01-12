@@ -130,3 +130,6 @@ dmypy.json
 
 # Config
 config.py
+
+# removed ds_store
+.DS_STORE
