@@ -1,3 +1,0 @@
-const sentimentSummary = {
-  country: "CAN"
-}
