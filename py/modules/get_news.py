@@ -13,5 +13,5 @@ class NewsClient:
 
     def get_articles(self, query, language):
         articles = self.newsapi.get_everything(
-            query, language, sort_by="relevancy", page_size=100)
+            query, language, sort_by="relevancy", page_size=10)
         return articles["articles"]
