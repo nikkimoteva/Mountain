@@ -1,13 +1,11 @@
 countries = [
-    {"query": "canada", "country": "ca"},
-    {"query": "china", "country": "ch"},
-    {"query": "india", "country": "in"},
-    {"query": "russia", "country": "ru"},
-    {"query": "korea", "country": "kr"},
-    {"query": "japan", "country": "jp"},
-    {"query": "israel", "country": "il"},
+    {"country": "canada", "code": "CAN"},
+    {"country": "russia", "code": "RUS"},
+    {"country": "japan", "code": "JPN"},
+    # {"country": "korea", "code": "KOR"},
+    # {"country": "germany", "code": "DEU"},
+    # {"country": "india", "code": "IND"},
+    # {"country": "iran", "code": "IRN"},
+    # {"country": "china", "code": "CHN"},
+    # {"country": "hong kong", "code": "HKG"},
 ]
-
-categories = ["business", "general"]
-
-language = "en"

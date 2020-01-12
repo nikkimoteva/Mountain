@@ -1,0 +1,30 @@
+from hashlib import md5
+
+
+def yield_permutations(config_countries):
+    for i in range(len(config_countries) - 1):
+        country_origin = config_countries[i]
+        country_targets = config_countries[i + 1:]
+        permutation = {
+            "country_origin": country_origin,
+            "target_origins": country_targets
+        }
+        yield permutation
+
+
+def commutative_md5(str1, str2):
+    sorted_str = "".join(sorted(str1 + str2)).encode("utf-8")
+    m = md5()
+    return m.hexdigest()
+
+
+def contruct_document(articles):
+    documents = []
+    id_n = 0
+    for article in articles:
+        documents.append({
+            "id": id_n,
+            "text": article["title"] + ". " + article["description"]
+        })
+        id_n += 1
+    return {"documents": documents}
