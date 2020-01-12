@@ -5,8 +5,8 @@ class NewsClient:
     def __init__(self, api_key):
         self.newsapi = NewsApiClient(api_key)
 
-    def yield_articles(self, query, category, language, country):
+    def yield_headlines(self, query, category, country):
         top_headlines = self.newsapi.get_top_headlines(
-            query, category, language, country)
-        for article in news_json["articles"]:
-            yield article
+            query, category, country)
+        for headline in top_headlines["articles"]:
+            yield headline
